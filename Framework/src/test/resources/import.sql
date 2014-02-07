@@ -1,0 +1,7 @@
+INSERT INTO testentity (id, name) VALUES (1, 'BBB')
+INSERT INTO testentity (id, name) VALUES (2, 'JJJ')
+INSERT INTO testentity (id, name) VALUES (3, 'JJJ')
+INSERT INTO testentity (id, name) VALUES (101, 'BBB')
+INSERT INTO testentity (id, name) VALUES (102, 'JJJ')
+INSERT INTO testentity (id, name) VALUES (103, 'JJJ')
+INSERT INTO testentity (id, name) VALUES (104, 'JJJ')
