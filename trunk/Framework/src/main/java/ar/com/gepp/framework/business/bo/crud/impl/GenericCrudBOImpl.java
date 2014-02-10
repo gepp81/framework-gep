@@ -1,19 +1,19 @@
-package ar.com.gepp.framework.persistence.bo.crud.impl;
+package ar.com.gepp.framework.business.bo.crud.impl;
 
 import java.io.Serializable;
 import java.util.List;
 
 import org.jboss.logging.Logger;
 
+import ar.com.gepp.framework.business.bo.crud.GenericCrudBO;
 import ar.com.gepp.framework.exceptions.FrameworkPersistenceException;
-import ar.com.gepp.framework.persistence.bo.crud.GenericCrudBO;
 import ar.com.gepp.framework.persistence.dao.crud.GenericCrudHibernateDAO;
 
 public class GenericCrudBOImpl<T> implements GenericCrudBO<T> {
 
 	private static final Logger log = Logger.getLogger(GenericCrudBOImpl.class);
 	private GenericCrudHibernateDAO<T> genericDAO;
-
+	
 	public List<T> getAll() throws FrameworkPersistenceException {
 		try {
 			return genericDAO.getAll();
