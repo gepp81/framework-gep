@@ -1,4 +1,4 @@
-package ar.com.gepp.framework.persistence.bo.crud;
+package ar.com.gepp.framework.business.bo.crud;
 
 import java.io.Serializable;
 import java.util.List;

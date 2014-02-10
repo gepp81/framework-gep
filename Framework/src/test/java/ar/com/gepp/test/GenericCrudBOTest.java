@@ -16,10 +16,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import ar.com.gepp.framework.business.bo.crud.GenericCrudBO;
+import ar.com.gepp.framework.business.bo.crud.impl.GenericCrudBOImpl;
 import ar.com.gepp.framework.core.FrameWorkApplicationContext;
 import ar.com.gepp.framework.exceptions.FrameworkPersistenceException;
-import ar.com.gepp.framework.persistence.bo.crud.GenericCrudBO;
-import ar.com.gepp.framework.persistence.bo.crud.impl.GenericCrudBOImpl;
 import ar.com.gepp.framework.persistence.dao.crud.GenericCrudHibernateDAO;
 import ar.com.gepp.test.entities.TestEntity;
 
@@ -58,8 +58,6 @@ public class GenericCrudBOTest {
 	
 	@Test(expected = FrameworkPersistenceException.class)
 	public void createEntityException() throws FrameworkPersistenceException {
-		TestEntity testEntity = new TestEntity();
-		testEntity.setName("AAA");
 		genericBOImpl.create(null);
 	}	
 
