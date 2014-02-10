@@ -1,21 +1,21 @@
 package ar.com.gepp.framework.aop.aspect;
 
-import org.aspectj.lang.annotation.AfterThrowing;
-import org.aspectj.lang.annotation.Aspect;
+import org.jboss.logging.Logger;
 
 import ar.com.gepp.framework.exceptions.FrameworkPersistenceException;
 
 /**
- * Aop para DAO
+ * Aop para transformacion de runtime a persistence 
  * 
  * @author gpidote
  * 
  */
-@Aspect
-public class AspectPersistence {
-
-	@AfterThrowing(pointcut = "execution(* ar.com.gepp.framework.persistence..*(..))", throwing = "ex")
+public class PersistenceTransformException {
+	
+	private static final Logger log = Logger.getLogger(PersistenceTransformException.class);
+	
 	public void errorRuntimeException(RuntimeException ex) throws FrameworkPersistenceException {
+		log.infov("AOP - Transformacion de Exception");
 		throw new FrameworkPersistenceException();
 	}
 
