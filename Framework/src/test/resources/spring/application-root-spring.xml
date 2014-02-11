@@ -12,6 +12,7 @@
 
 	<!-- Definicion de beans para el framework -->
 
-	<import resource="classpath*:spring/config/framework-*-spring.xml" />
+	<import resource="classpath*:spring/framework/framework-*-spring.xml" />
+	<import resource="classpath*:spring/frameworkTest/framework-*-spring.xml" />
 
 </beans>

@@ -5,10 +5,10 @@ import org.jboss.logging.Logger;
 import ar.com.gepp.framework.exceptions.FrameworkPersistenceException;
 
 /**
- * Aop para transformacion de runtime a persistence 
- * 
+ * Aop para transformacion de runtime a persistence
+ *
  * @author gpidote
- * 
+ *
  */
 public class PersistenceTransformException {
 	
