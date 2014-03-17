@@ -8,7 +8,7 @@
 				http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
 	<description>Pruebas XML</description>
 
-	<context:component-scan base-package="ar.com.gepp.*" />
+	<context:component-scan base-package="ar.com.gepp.framework.*" />
 
 	<!-- Definicion de beans para el framework -->
 
