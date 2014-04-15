@@ -1,4 +1,4 @@
-INSERT INTO testentity (id, name) VALUES (1, 'BBB')
+INSERT INTO testentity (id, name, age) VALUES (1, 'BBB', 'AGE')
 INSERT INTO testentity (id, name) VALUES (2, 'JJJ')
 INSERT INTO testentity (id, name) VALUES (3, 'JJJ')
 INSERT INTO testentity (id, name) VALUES (101, 'BBB')
