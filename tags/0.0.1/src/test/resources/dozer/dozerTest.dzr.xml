@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<mapping map-null="false" map-id="onlyName" wildcard="false">
+		<class-a>ar.com.gepp.test.entities.TestEntity</class-a>
+		<class-b>ar.com.gepp.test.dtos.TestDTO</class-b>
+	
+		<field>
+			<a>name</a>
+			<b>name</b>
+		</field>
+	</mapping>	
+
+</mappings>
